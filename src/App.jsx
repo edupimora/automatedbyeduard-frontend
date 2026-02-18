@@ -1,6 +1,7 @@
 // frontend/src/App.jsx
 import { useState } from 'react';
-import './App.css'; // We'll add all our new styles here
+import './App.css'; 
+import profilePic from './foto.jpeg';
 
 function App() {
   const [backendMessage, setBackendMessage] = useState('');
@@ -65,7 +66,7 @@ function App() {
         <div className="hero-content">
           {/* Placeholder for your profile picture */}
           {/* You can add your actual image here, e.g., <img src="/path/to/your/profile-pic.jpg" alt="Eduard Morales" className="profile-pic" /> */}
-          <img src="/foto.jpeg" alt="Eduard Morales" className="profile-pic" />
+          <img src={profilePic} alt="Eduard Morales" className="profile-pic" />
           <h1>Eduard Morales</h1>
           <p className="subtitle">Engineer Automatisierung</p>
           <p className="status-date">Stand: 20-07-2025</p>
